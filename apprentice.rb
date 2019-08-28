@@ -7,7 +7,7 @@ class Apprentice < Formula
   version "0.3.0"
   sha256 "a978b26714ecf2e8f65e363d0902b61bcd1cc704413db2bc114a7a37b01e4219"
 
-  depends_on :python if MacOS.version <= :snow_leopard
+  # depends_on :python if MacOS.version <= :snow_leopard
 
   resource "Conjur" do
     url "https://files.pythonhosted.org/packages/af/08/6271e8ff18ee37dfdfb4dc828810a6685bc2a2baf706085331989b193c47/Conjur-0.4.4.tar.gz"
