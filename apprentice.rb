@@ -9,7 +9,7 @@ class Apprentice < Formula
 
   # depends_on :python if MacOS.version <= :snow_leopard
   # puts MacOS.version.inspect
-  depends_on :python if MacOS.version <= :snow_leopard || MacOS.version = '#<Version::NULL>'
+  depends_on :python if MacOS.version <= :snow_leopard || MacOS.version != '#<Version::NULL>'
   
   resource "Conjur" do
     url "https://files.pythonhosted.org/packages/af/08/6271e8ff18ee37dfdfb4dc828810a6685bc2a2baf706085331989b193c47/Conjur-0.4.4.tar.gz"
